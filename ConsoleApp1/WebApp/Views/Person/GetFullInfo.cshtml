@@ -1,0 +1,62 @@
+﻿@using  WebApp.Models
+
+@model PersonInfo
+
+
+<div>
+    <p>Id: @Html.DisplayFor(Model => Model.Id)</p>
+    <p>Имя:  @Html.DisplayFor(Model => Model.Name)</p>
+    <p>Логин:  @Html.DisplayFor(Model => Model.Login)</p>
+    <p>Пароль:  @Html.DisplayFor(Model => Model.Password)</p>
+    <p>Почта:  @Html.DisplayFor(Model => Model.Email)</p>
+    <p>Рейтинг:  @Html.DisplayFor(Model => Model.Rating)</p>
+    <p>Дата приема на работу:  @Model.HireDate.ToShortDateString()</p>
+</div>
+
+
+
+<form asp-action="UpdatePerson" asp-controller="Person" data-ajax="true"
+      data-ajax-method="POST" data-ajax-success="onSuccess">
+
+    @Html.HiddenFor(@model => model.Id)
+
+    <div class="form-group">
+        @Html.EditorFor(@model => @model.Name)
+        @Html.ValidationMessageFor(@model => @model.Name)
+
+    </div>
+
+    <div class="form-group">
+        @Html.EditorFor(@model => @model.Login)
+        @Html.ValidationMessageFor(@model => @model.Login)
+    </div>
+
+    <div class="form-group">
+        @Html.EditorFor(@model => @model.Password)
+        @Html.ValidationMessageFor(@model => @model.Password)
+    </div>
+
+    <div class="form-group">
+        <p>Удален?</p>
+        <div id="dismissal">
+
+        </div>
+    </div>
+
+    <input type="submit" class="btn btn-success" />
+
+
+</form>
+
+
+<script>
+    function onSuccess(data) {
+        alert(data.newData.success);
+        if (data.isDeleted == false) {
+            $("#dismissal").html(data.deletedTextMessage.no)
+        }
+        else {
+            $("#dismissal").html(data.deletedTextMessage.yes);
+        }
+    }
+</script>

@@ -1,0 +1,94 @@
+﻿@using  WebApp.Models
+@using Common
+
+@model BookInfo
+
+
+<div>
+    <p>Id: @Html.DisplayFor(Model => Model.BookId)</p>
+    <p>Жанр:  @Html.DisplayFor(Model => Model.Genre)</p>
+    <p>Страна:  @Html.DisplayFor(Model => Model.Country)</p>
+    <p>Авторы: 
+            @foreach (var item in Model.Writers)
+            {
+                <p>item.FirstName</p>
+             }
+    </p>
+    <p>Год издания:  @Html.DisplayFor(Model => Model.Year)</p>
+</div>
+
+
+
+<form asp-action="UpdateBook" asp-controller="Book" data-ajax="true"
+      data-ajax-method="POST" data-ajax-success="onSuccess">
+
+    @Html.HiddenFor(@model => model.BookId)
+
+    <div class="form-group">
+        @Html.EditorFor(@model => @model.Genre)
+
+
+    </div>
+
+    <div class="form-group">
+        @Html.EditorFor(@model => @model.Country)
+        @Html.ValidationMessageFor(@model => @model.Rating)
+
+    </div>
+
+    <div class="form-group">
+
+        @Html.LabelFor(Model => Model.Genre, new { @class = "col-2 col-form-label" })
+        @Html.DropDownListFor(Model => Model.Genre, Model.SelectList = Model.Genre.GetSelectList())
+    </div>
+
+                    <div class="form-group">
+                        <p>Удален?</p>
+                        <div id="dismissal">
+
+                        </div>
+                    </div>
+
+                    <input type="submit" class="btn btn-success" />
+
+
+            </form>
+
+
+            @*<div>
+                    @using (Html.BeginForm("UpdatePerson", "Person", FormMethod.Post, new { id = Model.Id }))
+                    {
+
+                        @Html.HiddenFor(@model => model.Id)
+
+                        <div class="form-group">
+                            @Html.EditorFor(@model => @model.Name)
+                            @Html.ValidationMessageFor(@model => @model.Name)
+
+                        </div>
+
+                        <div class="form-group">
+                            @Html.EditorFor(@model => @model.Login)
+                            @Html.ValidationMessageFor(@model => @model.Login)
+                        </div>
+
+                        <div class="form-group">
+                            @Html.EditorFor(@model => @model.Password)
+                            @Html.ValidationMessageFor(@model => @model.Password)
+                        </div>
+
+                        <input type="submit" class="btn btn-success" />
+                    }
+                </div>*@
+
+        <script>
+            function onSuccess(data) {
+                alert(data.newData.success);
+                if (data.isDeleted == false) {
+                    $("#dismissal").html(data.deletedTextMessage.no)
+                }
+                else {
+                    $("#dismissal").html(data.deletedTextMessage.yes);
+                }
+            }
+        </script>

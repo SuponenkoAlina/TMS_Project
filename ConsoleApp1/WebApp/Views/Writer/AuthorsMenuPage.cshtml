@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model WriterInfo
+
+
+
+<div class="get-all" id="getall-writers">
+    @Html.ActionLink("Authors", "GetAll", "Writer", new { type = "button", @class = "btn btn-success" })
+</div>
+
+<div class="create" id="create-writer">
+    @Html.ActionLink("Add author", "Create", "Writer", new { type = "button", @class = "btn btn-success" })
+</div>

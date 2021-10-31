@@ -1,0 +1,75 @@
+﻿@model PersonInfo
+
+<body>
+
+    <section class="registration0" id="registration0"></section>
+
+    <section class="registration" id="registration">
+
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>g</span>
+            <span>i</span>
+            <span>s</span>
+            <span>t</span>
+            <span>r</span>
+            <span>a</span>
+            <span>t</span>
+            <span>i</span>
+            <span>o</span>
+            <span>n</span>
+        </h1>
+    </section>
+</body>
+
+<div class="">
+    <form asp-action="CreatePerson" asp-controller="Person" data-ajax="true"
+          data-ajax-method="POST" data-ajax-success="onCreate">
+
+        @Html.HiddenFor(Model => Model.Id)
+        <br />
+        @Html.LabelFor(Model => Model.Login)
+        @Html.EditorFor(Model => Model.Login)
+        <br />
+        @Html.LabelFor(Model => Model.Name)
+        @Html.EditorFor(Model => Model.Name)
+        <br />
+        @Html.LabelFor(Model => Model.Password)
+        @Html.EditorFor(Model => Model.Password)
+        <br />
+        @Html.LabelFor(Model => Model.Email)
+        @Html.EditorFor(Model => Model.Email)
+        <br />
+        <input type="submit" class="btn" id="sub" value="register">
+
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+@section Scripts{
+    <script>
+
+        function onCreate(data) {
+            $(document).on("ajaxSuccess", function () {
+                alert(data.emailMessage);
+                window.location = data.url;
+            });
+        }
+        $(document).ready(function () {
+
+            $("#sub").click(function () {
+                alert("Кнопка работает!!!");
+            });
+
+        });
+
+    </script>
+}

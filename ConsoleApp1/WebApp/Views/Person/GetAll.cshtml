@@ -1,0 +1,26 @@
+﻿
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using  WebApp.Models
+@model List<PersonInfo>
+
+<div class="text-center">
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Имя</th>
+            <th>Почта</th>
+          
+        </tr>
+        @foreach (var d in Model)
+        {
+            <tr>
+                <td>@d.Id</td>
+                <td>@d.Name</td>
+                <td>@d.Email</td>
+               
+                <td>@Html.ActionLink("Информация", "GetFullInfo", "Person", new { Id = d.Id }, new { type = "button", @class = "btn btn-success" })</td>
+                
+            </tr>
+         }
+    </table>
+</div>

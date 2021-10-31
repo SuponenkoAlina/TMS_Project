@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+@model BookInfo 
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - tarBooks</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarBooks</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--font awasome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+<body>
+
+    <!--header section starts-->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>tar</span>Books</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#readnow">Read Now</a>
+            <a href="#popular">Popular</a>
+            <a href="#gallery">New</a>
+            <a href="#blog">Blog</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+
+            @using (Html.BeginForm("GetAll", "Book", FormMethod.Get, { $() })
+            {
+                <input type="submit" value="Test" />
+                 <label for="search-bar" id="search" class="fas fa-search"></label>
+
+            }
+            
+        </form>
+    </header>
+
+    <!--header section ends-->
+    <!--login form container-->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="e-mail" class="box" placeholder="enter your e-mail">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have any account? <a asp-controller="Person" asp-action="CreatePage">register now</a></p>
+        </form>
+
+    </div>
+
+    <!--Home section starts-->
+
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - tarBooks - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
+
+@section Scripts{
+
+  <script>
+
+      $(document).ready(function () {
+
+          $("#search").mouseenter(function () {
+
+              alert("world!!!");
+          })
+
+      })
+      
+      var str = $("#search-bar").text
+
+      $("#search").click(function () {
+
+          alert("hello world!!!");
+
+      });
+
+      $("#read-now").on("click", function () {
+          var author = $("#text-holder").val();
+          var name = $("#text-holder").val();
+          $("#text-place").text(letters);
+      });
+
+
+
+  </script>
+   
+
+
+
+}

@@ -1,0 +1,256 @@
+﻿
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="" class="register">
+        <h3>login</h3>
+        <input type="e-mail" class="box" placeholder="enter your e-mail">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <p>don't have any account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<!--Home section starts-->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>find your books</h3>
+        <p>"The man who doesn't read good books has no advantage over the man who can't read them."</p>
+        <p>Mark Tven</p>
+
+        @using (Html.BeginForm("GetAll", "Book", FormMethod.Get)) {
+        
+            <input type="submit" class="btn" value="Find Book" />
+        
+        }
+
+    </div>
+
+    <div class="video-container">
+        <video src="images/fon-video1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!--Home section ends-->
+<!--Book section starts-->
+
+<section class="readnow" id="readnow">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>a</span>
+        <span>d</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/book.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>author</h3>
+                <input type="text" placeholder="author name">
+            </div>
+            <div class="inputBox">
+                <h3>book title</h3>
+                <input type="text" placeholder="book name">
+            </div>
+            <input type="submit" class="btn" value="search">
+
+        </form>
+    </div>
+</section>
+
+<!--Book section ends-->
+<!--Packages section starts-->
+
+<section class="top6" id="top6">
+
+    <h1 class="heading">
+        <span>t</span>
+        <span>o</span>
+        <span>p</span>
+        <span class="space"></span>
+        <span>6</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/book1.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-book"></i> name of book1 </h3>
+                <p>Some very interesting text</p>
+                <a href="#" class="btn">read now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/book2.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-book"></i> name of book2 </h3>
+                <p>Some very interesting text</p>
+                <a href="#" class="btn">read now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/book3.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-book"></i> name of book3 </h3>
+                <p>Some very interesting text</p>
+                <a href="#" class="btn">read now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/book4.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-book"></i> name of book4 </h3>
+                <p>Some very interesting text</p>
+                <a href="#" class="btn">read now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/book5.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-book"></i> name of book5 </h3>
+                <p>Some very interesting text</p>
+                <a href="#" class="btn">read now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/book6.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-book"></i> name of book6 </h3>
+                <p>Some very interesting text</p>
+                <a href="#" class="btn">read now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--packages section ends-->
+<!--gallery section starts-->
+
+<section class="new" id="new">
+    <h1 class="heading">
+        <span>n</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/book1.jpg" alt="">
+            <div class="content">
+                <h3>amazing plases</h3>
+                <p>TEXTarea</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/book2.jpg" alt="">
+            <div class="content">
+                <h3>amazing plases</h3>
+                <p>TEXTarea</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/book3.jpg" alt="">
+            <div class="content">
+                <h3>amazing plases</h3>
+                <p>TEXTarea</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/book4.jpg" alt="">
+            <div class="content">
+                <h3>amazing plases</h3>
+                <p>TEXTarea</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/book5.jpg" alt="">
+            <div class="content">
+                <h3>amazing plases</h3>
+                <p>TEXTarea</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/book6.jpg" alt="">
+            <div class="content">
+                <h3>amazing plases</h3>
+                <p>TEXTarea</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- footer section -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About us</h3>
+            <p>текст про сайт, че как....</p>
+        </div>
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#">home</a>
+            <a href="#">readnow</a>
+            <a href="#">top6</a>
+            <a href="#">New</a>
+        </div>
+
+    </div>
+
+    <!--<h1 class="credit">created by <span>Alina Suponenko</span></h1>-->
+
+</section>
+
+
+@section Scripts{
+    <script>
+
+    $(document).ready(function () {
+
+        $("#finding").click(function () {
+
+            $.ajax({
+
+                url: "@Url.Action("GetAll","Book")"
+            });
+
+           
+        });
+    })
+
+    </script>
+
+
+
+
+ }
