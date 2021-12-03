@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EneFQCH68+D4Bqdge/NVan/OsW4V8nHdxsiIhyNgiKyCDsQMNV0AooIRIJYxyCyWLkBR6dUGK2W6zYkbBUAn4g==",
+  "dgSpecHash": "HfSGSU3qFhTbrTus0MTHsxXS+5YTN5rsGzI03CY1skHCwtRs3O5eCsd1et+YK+Hvt6uNLeA1kDiebKNIae4szA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\BLL\\BLL.csproj",
+  "projectFilePath": "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

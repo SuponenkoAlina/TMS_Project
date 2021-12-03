@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nZ10Iv79hKi2yGLK3uD/TUnfIQmBicgwO2qLT1BOiFqEAnHpxvWQDfMp3hpRsHCXqF07zB5itD3byJ5CoWIjeA==",
+  "dgSpecHash": "FAlaaeN5le67WzuRf2F3mTR26nRNZAMghIWGYPxkd8OHqtGWnQY5ufus15hbVM4/vCcWbcM407O77WuhCyLvgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\ProjectDb\\ProjectDb.csproj",
+  "projectFilePath": "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\ProjectDb\\ProjectDb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

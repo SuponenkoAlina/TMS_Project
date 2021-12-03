@@ -5960,11 +5960,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\Repositories\\Repositories.csproj",
+      "projectPath": "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\Repositories\\Repositories.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\Repositories\\obj\\",
+      "outputPath": "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5981,8 +5981,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\ProjectDb\\ProjectDb.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\ProjectDb\\ProjectDb.csproj"
+            "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\ProjectDb\\ProjectDb.csproj": {
+              "projectPath": "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\ProjectDb\\ProjectDb.csproj"
             }
           }
         }

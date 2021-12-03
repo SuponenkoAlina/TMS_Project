@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X9DOA8KniYjlcWwNnBYGDse2Okar6yGo/Wxcvh036yxmtJh8GN9aCygsoDVW+yOlmYgvBiymrmyOeeMihoZk9A==",
+  "dgSpecHash": "W91YAKOR7dOilJEQBdsxUehefcfXKksIVNPtHZ56da3CRufAWnh1cO7TZ0wCGk8bKTrFyCU+FhDf1k+89VcFEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\Common\\Common.csproj",
+  "projectFilePath": "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\Common\\Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

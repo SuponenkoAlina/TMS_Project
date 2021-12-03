@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ezowEE36zMvVU/tmn8J2PzSI/Nr+54uJyfUWRJx5lyZBxKwDhQPLPDWJxeNuQJ14iNPxchwK4UbU9UnR44NuGw==",
+  "dgSpecHash": "Q1TmBeUoM7X/0pxsW9ciqbHwIjkBx7JDMbpN7w9+uo2ocXTCGIQnDT47/82Qk9BmXXkrcofb0PpIsow8JfR26g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Alina\\ConsoleApp1_1\\ConsoleApp1\\WebApp\\WebApp.csproj",
+  "projectFilePath": "D:\\C#\\TMS_Project\\TMS_Project\\ConsoleApp1\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",
